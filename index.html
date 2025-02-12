@@ -17,9 +17,11 @@
 </head>
 <body>
     <div id="app">
+        <!-- <a :href="url">best</a> -->
         <div v-if="showBooks">
             <ul>
                 <li v-for="book in books">
+                    <img :src="book.img" :alt="book.title">
                     <h2> {{ book.title }}</h2>
                     <p> {{ book.author }} </p>
                 </li>
